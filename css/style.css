@@ -273,6 +273,10 @@ fieldset{
     flex:1;
 }
 
+.acercaDe .video{
+    padding:15px 0;
+}
+
 .acercaDe .boton{
     position: relative;
     padding:10px 30px;
