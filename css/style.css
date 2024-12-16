@@ -4,25 +4,20 @@
     margin: 0%;
 }
 
-.nav-list{
-    display:grid;
+.navbar{
     background-color: rgba(0, 0, 0, 0.3);
-    list-style: none;
-    text-align: center;
-    grid-template-columns: repeat(3,1fr);
-
     margin:0;
     padding:0;
-    width:100%;
+    width: 100%;
 }
 
-.nav-list a{
+
+.navbar a{
     text-decoration: none;
     color: #f3d8fd;
-    /* padding:14px 20px; */
 }
 
-ul li a:hover{
+ul li a:hover, .navbar a:hover{
     color:rgb(255, 255, 255);
 }
 
@@ -36,7 +31,7 @@ ul li a:hover{
     /*height:50%;*/
 }
 
-body{
+body, .redes{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: linear-gradient(-135deg, #480057, #000000);
     color:rgb(227, 197, 252);
@@ -51,6 +46,8 @@ footer, #pie_pagina{
     margin-bottom: 10px;
     position:absolute;
 }
+
+
 
 #area_consulta h1, h2, .contenedor-producto h3, .acercaDe h1{
     font-family: "Raleway", sans-serif;
@@ -251,7 +248,7 @@ fieldset{
     border: 2px solid;
     font: inherit;
     line-height: 1;
-    margin: 0.5em;
+    margin: 0;
     padding: 1em 0.5em;
     text-decoration: none;
     border-radius: 15px;
@@ -398,24 +395,6 @@ fieldset{
         align-self:center;
     }
     
-     .nav-list{
-        display:grid;
-        background-color: rgba(0, 0, 0, 0.3);
-        list-style: none;
-        text-align: center;
-        grid-template-columns: repeat(3,1fr);
-        width:100%;
-        
-    } 
-    
-    .nav-list a{
-        text-decoration: none;
-        color: #f3d8fd;
-    }
-    
-    ul li a:hover{
-        color:rgb(255, 255, 255);
-    }
     .acercaDe{
         display: flex;
         margin: 10px;
