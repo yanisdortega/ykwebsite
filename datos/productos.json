@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "imagen":"../img/FaldaBolsillo.jpeg",
+        "nombre": "Falda con bolsillo",
+        "detalles": "Falda tableada gris confeccionada con jean elastizada de 7oz con bolsillo desmontable. Composición: 20% algodón 80% poliester.",
+        "precio": 4000,
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "imagen":"../img/FaldaNegra-3.png",
+        "nombre": "Falda negra",
+        "detalles": "Falda tableada negra confeccionada con gabardina elastizada de 7oz. Composición: 20% algodón 80% poliester.",
+        "precio": 3500,
+        "stock":50
+    },
+    {
+        "id": 3,
+        "imagen":"../img/Maid-1.png",
+        "nombre": "Vestido maid",
+        "detalles": "Vestido maid negro confeccionado con alguna tela. Composición: 20% algodón 80% poliester.",
+        "precio": 5000,
+        "stock":50
+    },
+    {
+        "id": 4,
+        "imagen":"../img/SailorBlanco-3.png",
+        "nombre": "Camisa sailor",
+        "detalles": "Camisa blanca con cuello tipo sailor confeccionado con alguna tela camisera. Composición: 20% algodón 80% poliester.",
+        "precio": 4000,
+        "stock":50
+    },
+    {
+        "id": 5,
+        "imagen":"../img/prenda1.png",
+        "nombre": "Conjunto sailor",
+        "detalles": "Camisa sailor + pollera tableada confeccionada con alguna tela. Composición: 20% algodón 80% poliester.",
+        "precio": 8000,
+        "stock":50
+    },
+    {
+        "id": 6,
+        "imagen":"../img/SailorNegro-3.png",
+        "nombre": "Camisa sailor",
+        "detalles": "Camisa negra con cuello tipo sailor confeccionado con alguna tela camisera. Composición: 20% algodón 80% poliester.",
+        "precio": 4000,
+        "stock":50
+    },
+    {
+        "id": 7,
+        "imagen":"../img/Charizard-1.jpeg",
+        "nombre": "Kigurumi Charizard",
+        "detalles": "Pijama pokemon versión Charizard confeccionada con polar premium. Composición: 100% poliester.",
+        "precio": 12000,
+        "stock":50
+    },
+    {
+        "id": 8,
+        "imagen":"../img/Snorlax-1.jpeg",
+        "nombre": "Kigurumi Snorlax",
+        "detalles": "Pijama pokemon versión Snorlax confeccionada con polar premium. Composición: 100% poliester.",
+        "precio": 12000,
+        "stock":50
+    },
+    {
+        "id": 9,
+        "imagen":"../img/Umbreon-1.jpeg",
+        "nombre": "Kigurumi Umbreon",
+        "detalles": "Pijama pokemon versión Charizard confeccionada con polar premium. Composición: 100% poliester.",
+        "precio": 12000,
+        "stock":50
+    },
+    {
+        "id": 10,
+        "imagen":"../img/PelucheGarra-1.jpeg",
+        "nombre": "Peluche garra",
+        "detalles": "Peluche relleno con vellón siliconado",
+        "precio": 4000,
+        "stock":50
+    },
+    {
+        "id": 11,
+        "imagen":"../img/FaldaRosa-1.jpeg",
+        "nombre": "Falda rosa",
+        "detalles": "Falda tableada rosa confeccionada con gabardina elastizada de 7oz. Composición: 20% algodón 80% poliester.",
+        "precio": 3500,
+        "stock":50
+    }
+]
