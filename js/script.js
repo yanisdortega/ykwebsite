@@ -19,11 +19,12 @@ http.onload = function () {
                     <div class="card-body">
                         <h3 class="card-title">${item.nombre}</h3>
                         <p class="card-text"><strong class="precio">$${item.precio}</strong></p>
+                        <p>Stock: <span id="stock-${item.id}">${item.stock}</span></p>
                         <button class="btn btn-primary description-btn" onclick="toggleDescription(this)">+ info</button>
                         <p class="card-description mt-3" style="display: none;">${item.detalles}</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-secondary w-100">Añadir al carrito</a>
+                        <button class="btn btn-secondary w-100" onclick="agregarAlCarrito('${item.nombre}', ${item.precio}, ${item.id})">Añadir al carrito</button>
                     </div>
                 </div>
             </div>`;

@@ -11,19 +11,17 @@
     width: 100%;
 }
 
-
-.navbar a{
+.collapse.navbar-collapse, .btn.position-relative{
     text-decoration: none;
     color: #f3d8fd;
 }
 
-ul li a:hover, .navbar a:hover{
+ul li a:hover, .navbar a:hover, .btn.position-relative:hover{
     color:rgb(255, 255, 255);
 }
 
 #logo{
     display:flex;
-
     padding:30px;
     justify-content: center;
     margin-left: auto;
@@ -53,7 +51,7 @@ footer, #pie_pagina{
     font-size: 25px;
 }
 
-/*Estilos página contacto con display:grid*/
+/*Estilos página contacto*/
 
 #comentarios{
     width: 100%;
@@ -156,6 +154,14 @@ fieldset{
 .contenedor-boton:hover{
     background-color: rgb(227, 197, 252);
     color: #ffffff;
+}
+button{
+    background-color:rgb(255, 175, 175);
+    color:white;
+    border:none;
+    border-radius: 8px;
+    font-size: small;
+    padding:1%;
 }
 
 #area_consulta{

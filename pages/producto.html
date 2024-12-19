@@ -38,10 +38,36 @@
                         </ul>
                     </div>
                 
-                    <!-- Icono del Carrito -->
-                    <a href="#" class="btn position-relative">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
+                    <button class="btn position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div id="carrito">
+                                <h2>Carrito de Compras</h2>
+                                <ul id="lista-carrito"></ul>
+                                <p>Subtotal: $<span id="subtotal-carrito">0</span></p>
+                                <p>IVA (21%): $<span id="iva-carrito">0</span></p>
+                                <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
+                                <button class="btn btn-outline-primary" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                                <button class="btn btn-outline-primary" onclick="mostrarCheckout()">Checkout</button>
+                            </div>
+                    
+                            <!-- Modal de Checkout dentro del offcanvas -->
+                            <div id="checkout-modal" class="mt-4" style="display: none; margin-top: 20px;">
+                                <h2>Finalizar Compra</h2>
+                                <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+                                <p>IVA: $<span id="modal-iva">0</span></p>
+                                <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+                                <button class="btn btn-outline-success" onclick="realizarCompra()">Confirmar Compra</button>
+                                <button class="btn btn-outline-danger" onclick="cerrarCheckout()">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
             </div>
     </nav>
     </header>
