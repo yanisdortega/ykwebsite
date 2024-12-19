@@ -32,7 +32,7 @@ ul li a:hover, .navbar a:hover{
 }
 
 body, .redes{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', Geneva, Verdana, sans-serif;
     background: linear-gradient(-135deg, #480057, #000000);
     color:rgb(227, 197, 252);
     box-sizing: inherit;
@@ -47,10 +47,7 @@ footer, #pie_pagina{
     position:absolute;
 }
 
-
-
 #area_consulta h1, h2, .contenedor-producto h3, .acercaDe h1{
-    font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 25px;
@@ -192,63 +189,50 @@ fieldset{
 
 /*Estilos página producto con display:flex*/
 
-.contenedor-producto{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+.contenido-producto{
     padding:20px;
 }
 
-.producto{
-    width:325px;
-    height:600px;
-    justify-content:space-between;
+.card.h-100{
     background-color:rgba(0, 0, 0, 0.3);
-    border-radius:8px;
     overflow:hidden;
     box-shadow:0px 2px 4px rgba(0,0,0,0.2);
-    margin:20px;
-    display:flex;
-    flex-direction:column;
-    align-items:start;
 }
-
-.producto img{
+.card-img-top{
+    width: auto;
     height: 420px;
     object-fit:contain;
     align-self:center;
 }
 
-.contenido-producto{
-    padding:15px;
-    width: 100%;
-}
-
-.contenido-producto h3{
+.card-title{
     font-size:28px;
     margin-bottom:8px;
 }
 
-.contenido-producto p{
+.productos p{
     font-size:15px;
     color:#666;
     line-height:1.3;
 }
-
-.contenido-producto .botones, #entrada_datos .botones{
+.precio{
+    color: rgb(227, 197, 252);
+    font-size:1.7em;
+}
+.contenido-producto .btn.btn-secondary, #entrada_datos .botones{
     display: flex;
     justify-content: center; 
     
 }
 
-.contenido-producto .btn, .button{
+.contenido-producto .btn.btn-secondary, .button{
     color: var(--color);
     transition: 0.25s;
     background: none;
     border: 2px solid;
     font: inherit;
     line-height: 1;
-    margin: 0;
+    margin: 5px;
     padding: 1em 0.5em;
     text-decoration: none;
     border-radius: 15px;
@@ -258,12 +242,18 @@ fieldset{
     -o-border-radius: 15px;
 }
 
-.contenido-producto .btn:hover,
-.contenido-producto .btn:focus, .button:hover, .button:focus { 
+.contenido-producto .btn.btn-secondary:hover,
+.contenido-producto .btn.btn-secondary:focus, .button:hover, .button:focus { 
     border-color: var(--hover);
     color: rgb(227, 197, 252);
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
+}
+.btn.btn-primary{
+    border: none;
+    color:#666;
+    text-decoration: none;
+    background: none;
 }
 
 /*Estilos página inicio con display:flex*/
@@ -378,7 +368,6 @@ fieldset{
 .slider:hover .list {
     animation-play-state: paused !important;
 }
-
 /*MEDIA QUERIES*/
 
 @media all and (min-width:600px) and (max-width: 900px){
@@ -402,9 +391,6 @@ fieldset{
     }
 }
  @media all and (max-width: 599px){
-    #logo{
-        padding:5px;
-    }
     #encabezado{
         width:auto;
     }
@@ -422,9 +408,6 @@ fieldset{
         'right'
         'footer';
         gap: 1rem;
-    }
-    .producto{
-        width:400px;
     }
     .acercaDe{
         margin: 10px;
